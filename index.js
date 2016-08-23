@@ -6,12 +6,12 @@ const osxBattery = require('osx-battery');
 const linux = () => linuxBattery().then(res => res[0].powerSupply === 'yes');
 const osx = () => osxBattery().then(res => res.isCharging);
 
-const win = () => execa('WMIC', ['Path', 'Win32_Battery', 'Get', 'BatteryStatus']).then(res => {
-	if (!res.stdout) {
+const win = () => execa.stdout('WMIC', ['Path', 'Win32_Battery', 'Get', 'BatteryStatus']).then(stdout => {
+	if (!stdout) {
 		return Promise.reject(new Error('No battery could be found'));
 	}
 
-	return res.stdout.indexOf('2') !== -1;
+	return stdout.indexOf('2') !== -1;
 });
 
 if (process.platform === 'darwin') {
