@@ -11,7 +11,7 @@ const win = () => execa.stdout('WMIC', ['Path', 'Win32_Battery', 'Get', 'Battery
 		return Promise.reject(new Error('No battery could be found'));
 	}
 
-	return stdout.indexOf('2') !== -1;
+	return stdout.includes('2');
 });
 
 if (process.platform === 'darwin') {
