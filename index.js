@@ -3,7 +3,7 @@ const execa = require('execa');
 const linuxBattery = require('linux-battery');
 const osxBattery = require('osx-battery');
 
-const linux = () => linuxBattery().then(res => res[0].powerSupply === 'yes');
+const linux = () => linuxBattery().then(res => res[0].state === 'charging');
 const osx = () => osxBattery().then(res => res.isCharging);
 
 const win = () => execa.stdout('WMIC', ['Path', 'Win32_Battery', 'Get', 'BatteryStatus']).then(stdout => {
