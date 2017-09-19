@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save is-charging
+$ npm install is-charging
 ```
 
 
@@ -38,4 +38,4 @@ Returns a promise that resolves in to a `Boolean`.
 
 ## License
 
-MIT © [Andreas Gillström](http://github.com/gillstrom)
+MIT © [Andreas Gillström](https://github.com/gillstrom)

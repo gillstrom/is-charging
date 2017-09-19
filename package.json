@@ -1,43 +1,43 @@
 {
-  "name": "is-charging",
-  "version": "1.2.0",
-  "description": "Find out if a computer is charging",
-  "license": "MIT",
-  "repository": "gillstrom/is-charging",
-  "author": {
-    "name": "Andreas Gillström",
-    "email": "andreasgillstrom@gmail.com",
-    "url": "github.com/gillstrom"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "battery",
-    "charge",
-    "charging",
-    "indication",
-    "is",
-    "linux",
-    "mac",
-    "osx",
-    "utility",
-    "win",
-    "windows"
-  ],
-  "dependencies": {
-    "execa": "^0.4.0",
-    "linux-battery": "^3.0.1",
-    "osx-battery": "^4.0.0"
-  },
-  "devDependencies": {
-    "ava": "*",
-    "xo": "*"
-  }
+	"name": "is-charging",
+	"version": "1.2.0",
+	"description": "Find out if a computer is charging",
+	"license": "MIT",
+	"repository": "gillstrom/is-charging",
+	"author": {
+		"name": "Andreas Gillström",
+		"email": "andreasgillstrom@gmail.com",
+		"url": "github.com/gillstrom"
+	},
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"battery",
+		"charge",
+		"charging",
+		"indication",
+		"is",
+		"linux",
+		"mac",
+		"osx",
+		"utility",
+		"win",
+		"windows"
+	],
+	"dependencies": {
+		"execa": "^0.8.0",
+		"linux-battery": "^3.0.1",
+		"osx-battery": "^4.0.0"
+	},
+	"devDependencies": {
+		"ava": "*",
+		"xo": "*"
+	}
 }

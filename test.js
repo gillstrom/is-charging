@@ -1,6 +1,6 @@
 import test from 'ava';
-import fn from './';
+import m from './';
 
 test(async t => {
-	t.is(typeof await fn(), 'boolean');
+	t.is(typeof await m(), 'boolean');
 });
