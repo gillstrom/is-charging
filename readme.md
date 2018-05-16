@@ -38,4 +38,4 @@ Returns a promise that resolves in to a `Boolean`.
 
 ## License
 
-MIT © [Andreas Gillström](https://github.com/gillstrom)
+MIT © [Andreas Strandman](https://github.com/gillstrom)
